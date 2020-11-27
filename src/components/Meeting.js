@@ -30,7 +30,7 @@ const Meeting = () => {
            }
            return error;
          });
-        const res = await axios.get('http://127.0.0.1:3000/api/v1/users/me');
+        const res = await axios.get('/users/me');
 
         return res.data.data.data.videoID;
     };
