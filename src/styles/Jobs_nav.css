@@ -1,0 +1,24 @@
+.nav__logo_job {
+    margin-left: 4rem;
+}
+
+.nav__account_job {
+    flex: 0.38;
+    margin-top: 5px;
+    margin-right: -8rem;
+}
+
+.nav__account_job > a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 45rem) {
+    .nav__logo_job {
+        margin-left: 1rem;
+    }
+
+    .nav__account_job {
+        flex: 0.85;
+        margin-right: -2.5rem;
+    }
+}

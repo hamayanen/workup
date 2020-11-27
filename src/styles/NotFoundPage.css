@@ -1,0 +1,13 @@
+.notfound__component {
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.notfound__link {
+    color: black;
+}
+
+.notfound__link:hover {
+    border-bottom: 1.5px solid black;
+}
+

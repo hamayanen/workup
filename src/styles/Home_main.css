@@ -1,0 +1,99 @@
+.main__body {
+    display: grid;
+    background: #000;
+}
+
+.main__body_img {
+    position: relative;
+    width: 100%;
+    height: 36rem;
+    opacity: 0.4;
+}
+
+.main__body_form {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper__input_left {
+    margin-right: 1.2rem;
+}
+
+.wrapper__input_right {
+    margin: 0 1.2rem 0 1rem;
+}
+
+.text__input_label {
+    color: #efefef;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+
+.main__body_input {
+    width: 30rem;
+    height: 2.6rem;
+    border-radius: 8px;
+    border: 2px solid #252525;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.main__body_input:focus {
+    border-color: #2f3bb8;
+}
+
+.main__body_button {
+    border: none;
+    background:  #1220b6;
+    color: #efefef;
+    width: 8rem;
+    height: 3.2rem;
+    margin-top: 1.8rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px 0px #2b3281;
+    transition: 0.5s;
+}
+
+.main__body_button:hover {
+    background-color: #0d1780;
+    transform: translateY(-2px);
+}
+
+.main__body_button:active,:focus {
+    transform: translateY(2px);
+    outline: 0;
+}
+
+@media screen and (max-width: 45rem) {
+    .main__body_form {
+        flex-direction: column;
+    }
+
+    .wrapper__input_left {
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .wrapper__input_right {
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+
+    .main__body_input {
+        width: 32rem;
+    }
+
+    .main__body_button {
+        width: 34rem;
+        letter-spacing: 10px;
+    }
+}

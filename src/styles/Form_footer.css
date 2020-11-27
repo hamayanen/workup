@@ -1,0 +1,10 @@
+.form__footer {
+    width: 100%;
+    background-color: #ecebeb;
+    border-top: 1px solid #a7a5a5;
+    vertical-align: bottom;
+}
+
+.form__footer > p {
+    margin: 0.5rem;
+}

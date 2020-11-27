@@ -1,0 +1,86 @@
+.nav__main {
+    display: flex;
+    width: 100vw;
+    margin-top: 1.2rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 1px solid #b8b6b6;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.nav__link {
+    color: #121212;
+}
+
+.nav__link:hover {
+    border-bottom: 2px solid #182BFF;
+}
+
+.nav__link_logo {
+    color: #182BFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav__link_logo:hover {
+    border-bottom: none;
+}
+
+.nav__logo {
+    flex: 0.2;
+    margin: -0.3rem 0 0 1.5rem;
+}
+
+.nav__search {
+    flex: 0.45;
+}
+
+.nav__account {
+    flex: 0.35;
+}
+
+.nav__link_account {
+    margin: 2rem;
+}
+
+.nav__link_dropdownBar {
+    display: inline-block;
+    position: relative;
+}
+
+.nav__link_dropdown {
+    position: absolute;
+    background-color: #ffffff;
+    width: 8rem;
+    height: 10rem;
+    margin-top: 1.1rem;
+    margin-left: 6.9rem;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 100000;
+}
+
+.nav__link_dropdownItem {
+    display: inline-block;
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 45rem) {
+    .nav__search {
+        flex: 0.2;
+    }
+
+    .nav__account {
+        flex: 0.6;
+    }
+
+    .nav__link_account {
+        margin: 1.4rem;
+    }
+
+    .nav__link_dropdown {
+        margin-left: 5.1rem;
+    }
+}
+
