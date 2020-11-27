@@ -17,7 +17,7 @@ const PasswordChange = () => {
             const res = await axios({
                 method: 'PATCH',
                 headers: {'Content-Type': 'application/json'},
-                url: 'http://127.0.0.1:3000/api/v1/users/updatePassword',
+                url: '/users/updatePassword',
                 data: {
                     currentPassword,
                     newPassword,
