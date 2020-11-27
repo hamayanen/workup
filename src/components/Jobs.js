@@ -30,7 +30,7 @@ const Jobs = () => {
 
         e.preventDefault();
 
-        const res = await axios.get('http://127.0.0.1:3000/api/v1/jobs');
+        const res = await axios.get('/jobs');
 
         setLoading(false);
 
@@ -54,7 +54,7 @@ const Jobs = () => {
 
             setSearchValue(sessionStorage.getItem('searchValue'))
 
-            const res = await axios.get('http://127.0.0.1:3000/api/v1/jobs');
+            const res = await axios.get('/jobs');
 
             setLoading(false)
             
@@ -70,7 +70,7 @@ const Jobs = () => {
                 setError('*一致する職が見つかりませんでした。')
             };
         } else {
-            const res = await axios.get('http://127.0.0.1:3000/api/v1/jobs'); 
+            const res = await axios.get('/jobs'); 
             setData(res.data.data.data);
         }
     };
