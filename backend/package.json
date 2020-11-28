@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "SET NODE_ENV=development && nodemon server.js"
+    "start:dev": "SET NODE_ENV=development && nodemon server.js",
+    "start": "nodemon server.js"
   },
   "author": "Hama",
   "license": "ISC",
