@@ -4,7 +4,8 @@
   "main": "backend/server.js",
   "scripts": {
     "build": "webpack",
-    "dev-server": "webpack serve --host 127.0.0.1 --port 8080 --https"
+    "dev-server": "webpack serve --host 127.0.0.1 --port 8080 --https",
+    "start": "webpack serve"
   },
   "author": "Ryoya Hamada",
   "license": "ISC",
